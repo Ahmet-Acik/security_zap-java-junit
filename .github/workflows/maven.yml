@@ -23,7 +23,7 @@ jobs:
       - name: Start ZAP Proxy
         run: |
           docker pull owasp/zap2docker-weekly
-          docker run -u zap -d -p 8080:8080 owasp/zap2docker-weekly zap.sh -daemon -host 0.0.0.0 -port 8080
+          docker run -u zap -d -p 8080:8080 owasp/zap2docker-live zap.sh -daemon -host 0.0.0.0 -port 8080
 
       - name: Wait for ZAP to start
         run: |
