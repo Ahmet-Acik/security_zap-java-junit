@@ -24,8 +24,7 @@ jobs:
         run: |
           wget https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2_13_0_unix.sh
           chmod +x ZAP_2_13_0_unix.sh
-          ./ZAP_2_13_0_unix.sh -daemon -host 0.0.0.0 -port 8080
-        background: true
+          ./ZAP_2_13_0_unix.sh -daemon -host 0.0.0.0 -port 8080 &
 
       - name: Wait for ZAP to start
         run: |
