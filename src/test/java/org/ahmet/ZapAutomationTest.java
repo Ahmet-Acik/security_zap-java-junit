@@ -9,8 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class ZapAutomationTest {
 
-//    private static final String TARGET_URL = "https://juice-shop.herokuapp.com";
-    private static final String TARGET_URL = "https://frendioriginal.com/";
+    private static final String TARGET_URL = "https://juice-shop.herokuapp.com";
 
     @Test
     public void testZapUrlAutomation() {
